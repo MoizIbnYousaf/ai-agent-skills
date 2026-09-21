@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "purpose": "Example manifest demonstrating one provider of each kind. Replace with your own references.",
+    "note": "Matching is by content, not by identifier. `crossCheck` is what turns a retrieval into a verification."
+  },
+  "refs": [
+    {
+      "id": "quran-43-61",
+      "label": "Qur'an 43:61 -- the contested verse",
+      "source": "quran-uthmani",
+      "locator": { "surah": 43, "ayah": 61 },
+      "profile": "arabic",
+      "assert": { "field": "text", "contains": "لَعِلْمٌ" },
+      "notes": "Asserts only that the reading la-ʿilmun is present; the referent dispute is an interpretive question, not a retrieval one."
+    },
+    {
+      "id": "quran-43-61-en",
+      "label": "Qur'an 43:61 -- Saheeh International rendering",
+      "source": "quran-translation",
+      "locator": { "surah": 43, "ayah": 61, "translation": 20 },
+      "profile": "latin"
+    },
+    {
+      "id": "tabari-43-61",
+      "label": "al-Tabari on Q 43:61 (Arabic)",
+      "source": "quran-tafsir",
+      "locator": { "surah": 43, "ayah": 61, "tafsir": 15 },
+      "profile": "arabic"
+    },
+    {
+      "id": "bukhari-3448",
+      "label": "al-Bukhari 3448 -- the descent report",
+      "source": "sunnah",
+      "locator": { "path": "bukhari:3448" },
+      "profile": "arabic",
+      "crossCheck": {
+        "via": "corpus",
+        "corpus": "hadith-api-book",
+        "locator": { "edition": "ara-bukhari" }
+      },
+      "notes": "Cross-checked by CONTENT against an independent bulk dataset. Note that this dataset does not share sunnah.com's numbering for every collection -- for Sahih Muslim it does not -- so identifier matching must never be used."
+    },
+    {
+      "id": "malik-56-4",
+      "label": "al-Muwatta' -- Isa and the pig",
+      "source": "sunnah",
+      "locator": { "path": "malik/56/4" },
+      "profile": "arabic",
+      "notes": "Shows the book/hadith locator form, used by collections addressed as book/section rather than by running number."
+    },
+    {
+      "id": "cook-apocalyptic",
+      "label": "Cook, Studies in Muslim Apocalyptic",
+      "source": "openlibrary-search",
+      "locator": { "query": "Studies in Muslim Apocalyptic David Cook", "limit": 1 },
+      "profile": "latin",
+      "assert": { "field": "text", "contains": "Studies in Muslim Apocalyptic" }
+    },
+    {
+      "id": "crossref-example",
+      "label": "A DOI record (Crossref)",
+      "source": "crossref-doi",
+      "locator": { "doi": "10.1038/171737a0" },
+      "profile": "latin"
+    },
+    {
+      "id": "wikipedia-example",
+      "label": "Encyclopaedia summary",
+      "source": "wikipedia-summary",
+      "locator": { "lang": "en", "title": "Jesus in Islam" },
+      "profile": "latin"
+    }
+  ]
+}
