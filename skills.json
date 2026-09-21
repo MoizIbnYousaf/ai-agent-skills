@@ -1,7 +1,7 @@
 {
   "version": "4.3.2",
-  "updated": "2026-08-17",
-  "total": 140,
+  "updated": "2026-09-21",
+  "total": 141,
   "workAreas": [
     {
       "id": "frontend",
@@ -129,7 +129,8 @@
         "code-documentation",
         "content-research-writer",
         "openai-docs",
-        "notion-spec-to-implementation"
+        "notion-spec-to-implementation",
+        "verification-agent"
       ]
     },
     {
@@ -4553,6 +4554,37 @@
       "distribution": "live",
       "notes": "",
       "labels": []
+    },
+    {
+      "name": "verification-agent",
+      "description": "Verify claims, quotations, citations and references against live primary sources, and produce a reproducible audit record instead of an assertion. Use when asked to: check whether a quotation, verse, statistic, date, attribution or citation is accurate; verify references before publishing a report, thesis, article, slide deck or legal filing; confirm a text against an authoritative database; cross-check a claim across independent sources; build a citation register or verification appendix; find out whether two datasets agree; detect a misattributed or fabricated quotation; or audit a document's existing citations. Source-agnostic by design, with working providers for REST/JSON APIs, scraped HTML, bulk corpora, bibliographic catalogues (OpenLibrary), DOI resolution (Crossref) and reference works (Wikipedia) -- including scriptural tiers (Qur'an.com, sunnah.com and an independent hadith corpus) with full diacritic handling for Arabic, Hebrew, Greek and any script with optional marks. Covers content-addressed matching when sources disagree on numbering, graded match verdicts, byte-level integrity checks, published-string verification, and a catalogue of silent failure modes (identifier divergence, mojibake, scraper blocking, false-positive keyword rules, missing glyphs, unreliable PDF text layers).",
+      "category": "productivity",
+      "workArea": "workflow",
+      "branch": "Research & Writing",
+      "author": "shersdk",
+      "source": "shersdk/skilldex",
+      "license": "MIT",
+      "tags": [
+        "verification",
+        "citations",
+        "fact-check",
+        "provenance",
+        "audit"
+      ],
+      "featured": false,
+      "verified": false,
+      "origin": "curated",
+      "trust": "listed",
+      "syncMode": "mirror",
+      "sourceUrl": "https://github.com/shersdk/skilldex/tree/main/verification-agent",
+      "whyHere": "Most “I checked it” claims stop at retrieval. This skill produces a re-runnable record: live-source fetching with provenance, content-addressed cross-checks for when two sources disagree on numbering, and published-string equality checks that catch transcription drift between the record and the page.",
+      "tier": "house",
+      "vendored": true,
+      "distribution": "bundled",
+      "installSource": "",
+      "notes": "",
+      "labels": [],
+      "path": "skills/verification-agent"
     }
   ]
 }
