@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Verification record set",
+  "description": "Produced by scripts/verify.mjs. One record per manifest entry. The records are the source of truth: deliverable text is generated from them, never transcribed.",
+  "type": "object",
+  "required": ["records"],
+  "properties": {
+    "generated": { "type": "string", "description": "ISO 8601 UTC timestamp of the run" },
+    "manifest": { "type": "string", "description": "Path to the manifest that produced this set" },
+    "counts": {
+      "type": "object",
+      "description": "Tally by status",
+      "additionalProperties": { "type": "integer" }
+    },
+    "records": { "type": "array", "items": { "$ref": "#/definitions/record" } }
+  },
+  "definitions": {
+    "record": {
+      "type": "object",
+      "required": ["id", "source", "locator", "status"],
+      "properties": {
+        "id": { "type": "string", "description": "Stable identifier, unique within the set" },
+        "label": { "type": "string", "description": "Human-readable description of what this is" },
+        "source": { "type": "string", "description": "Provider id used for retrieval" },
+        "locator": { "type": "object", "description": "Parameters that address the item at that source" },
+        "profile": {
+          "type": "string",
+          "description": "Normalisation profile applied when comparing this item",
+          "enum": ["identity", "unicode", "diacritic-fold", "latin", "latin-alnum", "arabic", "hebrew", "greek", "numeric"]
+        },
+        "notes": { "type": "string", "description": "Caveats a reader needs, e.g. known divergences" },
+        "fetchedUtc": {
+          "type": ["string", "null"],
+          "description": "ISO 8601 UTC. A verification is a snapshot; sources change."
+        },
+        "url": { "type": ["string", "null"], "description": "The exact URL retrieved" },
+        "fetchedVia": {
+          "type": "string",
+          "description": "Transport that succeeded (e.g. 'fetch', 'curl (fetch returned 403)'). Needed to reproduce the check."
+        },
+        "httpStatus": { "type": ["integer", "null"] },
+        "fields": {
+          "type": "object",
+          "description": "Retrieved text as it came from the source, keyed by field name",
+          "additionalProperties": { "type": "string" }
+        },
+        "fingerprints": {
+          "type": "object",
+          "description": "SHA-256 prefix per field, computed over the retrieved (not normalised) text",
+          "additionalProperties": { "type": "string" }
+        },
+        "assertions": {
+          "type": "array",
+          "description": "Expectations tested against the retrieved text. A failing assertion is the most valuable output the system produces.",
+          "items": {
+            "type": "object",
+            "required": ["kind", "pass"],
+            "properties": {
+              "kind": { "type": "string", "enum": ["contains", "equals"] },
+              "field": { "type": "string" },
+              "expected": { "type": "string" },
+              "pass": { "type": "boolean" },
+              "verdict": { "type": "string", "description": "Match rung at which the assertion was decided" },
+              "run": { "type": "integer", "description": "Longest shared run, in characters" },
+              "ratio": { "type": "number", "description": "run / shorter length" }
+            }
+          }
+        },
+        "crossCheck": {
+          "type": ["object", "null"],
+          "description": "Independent confirmation. Required for any item carrying argumentative weight.",
+          "properties": {
+            "via": { "type": "string", "enum": ["provider", "corpus"] },
+            "provider": { "type": "string" },
+            "corpus": { "type": "string" },
+            "url": { "type": "string" },
+            "index": { "type": "string", "description": "Path to the content index used, for reproducibility" },
+            "fromCache": { "type": "boolean" },
+            "hits": { "type": "integer" },
+            "matchedIds": {
+              "type": "array",
+              "description": "Identifiers of the matching items in the independent source. These are that source's own identifiers, which may differ from the primary source's numbering -- the whole reason matching is by content."
+            },
+            "verdict": {
+              "type": "string",
+              "description": "INDEPENDENT-CONFIRM, NOT-FOUND-IN-INDEPENDENT-SOURCE, or a match rung for provider comparisons"
+            },
+            "run": { "type": "integer" },
+            "ratio": { "type": "number" }
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": ["VERIFIED", "RETRIEVED", "MISMATCH", "FAILED"],
+          "description": "VERIFIED = retrieved and every assertion passed. RETRIEVED = fetched, nothing asserted. MISMATCH = an assertion or cross-check failed; investigate before publishing. FAILED = could not retrieve; report, never silently drop."
+        },
+        "error": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

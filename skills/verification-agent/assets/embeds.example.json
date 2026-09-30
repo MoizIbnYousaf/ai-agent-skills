@@ -1,0 +1,10 @@
+{
+  "_comment": "Example of the --embeds input for qa-records.mjs. Dump whatever your generator actually published -- LaTeX macro values, MDX, HTML strings, an i18n bundle -- as a flat map. Keys are 'recordId' (implying the 'text' field) or 'recordId.field'. The check proves the published string IS the verified string, which is what makes 'nothing was transcribed by hand' a checkable claim rather than a promise.",
+  "_warning": "The comparison is deliberately STRICT (exact or normalised-exact). Do not relax it to 'content-match': a 40-character prefix of a 700-character passage scores content-match at ratio 0.93, so a truncated or extended string would pass. Use --allow-partial only when you knowingly publish an abridgement.",
+
+  "quran-43-61.text": "وَإِنَّهُۥ لَعِلْمٌ لِّلسَّاعَةِ فَلَا تَمْتَرُنَّ بِهَا وَٱتَّبِعُونِ ۚ هَٰذَا صِرَٰطٌ مُّسْتَقِيمٌ",
+  "quran-43-61-en.text": "And indeed, he will be [a sign for] knowledge of the Hour, so be not in doubt of it, and follow Me. This is a straight path.",
+  "bukhari-3448.text": "…",
+  "bukhari-3448.grade": "",
+  "cook-apocalyptic.text": "Studies in Muslim Apocalyptic"
+}
