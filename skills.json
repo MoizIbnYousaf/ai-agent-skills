@@ -1,7 +1,7 @@
 {
   "version": "4.3.2",
-  "updated": "2026-09-21",
-  "total": 141,
+  "updated": "2026-10-17",
+  "total": 142,
   "workAreas": [
     {
       "id": "frontend",
@@ -127,6 +127,7 @@
         "xlsx",
         "pptx",
         "code-documentation",
+        "project-memory-log",
         "content-research-writer",
         "openai-docs",
         "notion-spec-to-implementation",
@@ -4585,6 +4586,37 @@
       "notes": "",
       "labels": [],
       "path": "skills/verification-agent"
+    },
+    {
+      "name": "project-memory-log",
+      "description": "Maintain one operation log and one deduplicated document catalog for long-running projects. Use when resuming project work or tracing durable document changes across sessions.",
+      "category": "productivity",
+      "workArea": "workflow",
+      "branch": "Files & Docs",
+      "author": "JaclynFitzpatrick",
+      "source": "JaclynFitzpatrick/project-memory-log",
+      "license": "MIT",
+      "tags": [
+        "project-memory",
+        "operation-log",
+        "document-catalog",
+        "traceability",
+        "document-reuse"
+      ],
+      "featured": false,
+      "verified": false,
+      "origin": "curated",
+      "trust": "listed",
+      "syncMode": "snapshot",
+      "sourceUrl": "https://github.com/JaclynFitzpatrick/project-memory-log/tree/ae617761973c6f2c51f6762a54b1ad6e91e94b36",
+      "whyHere": "Keeps project operation history and canonical document locations together across sessions, with reuse before creation and explicit missing, archived, and superseded states.",
+      "tier": "house",
+      "vendored": true,
+      "distribution": "bundled",
+      "installSource": "",
+      "notes": "Instruction-only snapshot of author-maintained source commit ae617761973c6f2c51f6762a54b1ad6e91e94b36; only metadata.version is added for the library convention. No automatic invocation or performance improvement is claimed.",
+      "labels": [],
+      "path": "skills/project-memory-log"
     }
   ]
 }
