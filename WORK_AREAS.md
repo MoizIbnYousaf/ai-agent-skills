@@ -48,12 +48,12 @@ House copies stay flat under `skills/<name>/`. The catalog holds the real struct
 
 ## Workflow
 
-12 skills. Files, docs, planning, release work, and research-to-output flows.
+13 skills. Files, docs, planning, release work, and research-to-output flows.
 
 | Branch | Skills | Source |
 | --- | --- | --- |
 | Files & Docs | `pdf`, `xlsx`, `docx`, `pptx`, `doc-coauthoring`, `code-documentation` | anthropics, wshobson |
-| Planning | `linear`, `notion-spec-to-implementation` | openai |
+| Planning | `linear`, `notion-spec-to-implementation`, `product-design-harness` | openai, Product Design Harness contributors |
 | Release | `changelog-generator` | composio |
 | Release & Sharing | `share-a-library` | MoizIbnYousaf |
 | Research & Writing | `content-research-writer`, `verification-agent` | composio, shersdk |

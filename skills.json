@@ -1,7 +1,7 @@
 {
   "version": "4.3.2",
   "updated": "2026-09-21",
-  "total": 141,
+  "total": 142,
   "workAreas": [
     {
       "id": "frontend",
@@ -4585,6 +4585,32 @@
       "notes": "",
       "labels": [],
       "path": "skills/verification-agent"
+    },
+    {
+      "name": "product-design-harness",
+      "description": "Use when a product direction, feature, workflow, experiment, launch, feedback signal, automation, or scale decision needs judgment before execution or the next iteration.",
+      "category": "business",
+      "workArea": "workflow",
+      "branch": "Planning",
+      "author": "Product Design Harness contributors",
+      "source": "cis2042/ux3-product-design-harness",
+      "license": "MIT",
+      "tags": ["product-design", "product-decisions", "validation"],
+      "featured": false,
+      "verified": false,
+      "origin": "curated",
+      "trust": "listed",
+      "syncMode": "snapshot",
+      "sourceUrl": "https://github.com/cis2042/ux3-product-design-harness/tree/48965c6b501f61ebbb8130c9c2e4f9af08922b9f/skills/product-design-harness",
+      "whyHere": "Adds three-Flow product judgment with a deterministic reducer, JSON schemas and a joint validator alongside existing clarification, launch planning and source verification skills; these areas overlap, while this snapshot packages the decision kernel and its supporting files together.",
+      "tier": "house",
+      "vendored": true,
+      "distribution": "bundled",
+      "installSource": "",
+      "requires": [],
+      "notes": "All 90 support files and the original MIT LICENSE are unchanged. SKILL.md has one platform adaptation: version: 0.2.0, taken from the source root plugin.json at commit 48965c6b501f61ebbb8130c9c2e4f9af08922b9f; the separate Claude plugin manifest says 1.0.0. Removing that one line restores the original entry bytes. Python and jsonschema are required for validation helpers. Known padding override defect and three missing referenced SVGs remain; source PRs 23 and 24 are unmerged in the last known record. No agent-host or model evaluation claimed.",
+      "labels": [],
+      "path": "skills/product-design-harness"
     }
   ]
 }
