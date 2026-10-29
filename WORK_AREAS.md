@@ -75,7 +75,7 @@ House copies stay flat under `skills/<name>/`. The catalog holds the real struct
 
 ## Marketing
 
-76 skills. Brand, strategy, copy, distribution, creative, SEO, conversion, and growth work.
+77 skills. Brand, strategy, copy, distribution, creative, SEO, conversion, and growth work.
 
 | Branch | Skills | Source |
 | --- | --- | --- |
@@ -86,5 +86,6 @@ House copies stay flat under `skills/<name>/`. The catalog holds the real struct
 | Foundation | `cmo`, `brand-voice`, `positioning-angles`, `audience-research`, `competitive-intel`, `landscape-scan`, `brainstorm`, `create-skill`, `deepen-plan`, `document-review`, `voice-extraction`, `mktg-setup`, `company-research` | MoizIbnYousaf |
 | Growth | `churn-prevention`, `referral-program`, `free-tool-strategy`, `startup-launcher`, `lead-generation` | MoizIbnYousaf |
 | Knowledge | `marketing-psychology`, `firecrawl`, `summarize`, `axi`, `exa-search`, `exa-contents`, `build-with-exa` | MoizIbnYousaf |
+| Sales & Negotiation | `harvey-specter` | YannisKiefer |
 | SEO | `seo-audit`, `ai-seo`, `competitor-alternatives`, `off-page-seo`, `seo-machine`, `openseo`, `openseo-project-setup`, `openseo-coach`, `openseo-keyword-research`, `openseo-keyword-clustering`, `openseo-competitive-landscape`, `openseo-competitor-analysis`, `openseo-link-prospecting` | MoizIbnYousaf |
 | Strategy | `keyword-research`, `launch-strategy`, `pricing-strategy` | MoizIbnYousaf |
