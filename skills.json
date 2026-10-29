@@ -1,7 +1,7 @@
 {
   "version": "4.3.2",
-  "updated": "2026-09-21",
-  "total": 141,
+  "updated": "2026-10-29T00:00:00Z",
+  "total": 142,
   "workAreas": [
     {
       "id": "frontend",
@@ -4585,6 +4585,40 @@
       "notes": "",
       "labels": [],
       "path": "skills/verification-agent"
+    },
+    {
+      "name": "harvey-specter",
+      "description": "Use when preparing negotiations, difficult conversations, leadership responses, or setbacks that need evidence, composure, clear boundaries, and relationship-aware drafting.",
+      "category": "business",
+      "workArea": "marketing",
+      "branch": "Sales & Negotiation",
+      "author": "YannisKiefer",
+      "source": "YannisKiefer/harvey-specter",
+      "license": "MIT",
+      "path": "skills/harvey-specter",
+      "tier": "house",
+      "distribution": "bundled",
+      "vendored": true,
+      "installSource": "",
+      "tags": [
+        "negotiation",
+        "communication",
+        "leadership",
+        "decision-making"
+      ],
+      "featured": false,
+      "verified": false,
+      "origin": "curated",
+      "trust": "listed",
+      "syncMode": "snapshot",
+      "sourceUrl": "https://github.com/YannisKiefer/harvey-specter/tree/372bac9104d7511d8cf64a9bd10d9e7de461af0e/skills/harvey-specter",
+      "whyHere": "Adds a decision-first negotiation and difficult-conversation workflow across support, accountability, boundaries, missing facts, walk-away decisions, and feasible trades, rather than general conversion copy.",
+      "addedDate": "2026-10-29",
+      "lastVerified": "",
+      "notes": "Snapshot at source commit 372bac9104d7511d8cf64a9bd10d9e7de461af0e. Original character-inspired guidance, not affiliated with Suits. Codex-agent review and installer checks only; no Claude-platform, field-outcome, full-transcript, or language-model-training claim.",
+      "labels": [],
+      "lastCurated": "2026-10-29T00:00:00Z",
+      "requires": []
     }
   ]
 }
