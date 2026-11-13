@@ -1,4 +1,5 @@
 ---
+version: 2.1.1
 name: ghost-qa
 description: Verify frontend work in a real headless browser before reporting a task complete. The autonomous Staff QA Engineer protocol — doctor readiness, multi-viewport 8-Trap baseline audit (Desktop/Tablet/Mobile, light + dark), DOM-to-source root-cause mapping, surgical remediation, and closed-loop delta verification with ghost_qa_compare until QA Health Score is 95–100 (Grade A+). Use after building or changing any UI, route, form, API integration, or client-side logic.
 license: MIT

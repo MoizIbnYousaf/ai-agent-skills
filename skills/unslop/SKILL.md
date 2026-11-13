@@ -1,4 +1,5 @@
 ---
+version: 2.1.1
 name: unslop
 description: Principal UI/UX Design Engineer protocol for Claude Code, Cursor, and Windsurf. Diagnose 72 anti-slop rules across 7 pillars, install one of 10 studio archetypes or extracted Design DNA, generate an exact transformation blueprint, and verify interfaces to 95–100/100 (A+).
 ---
