@@ -13,10 +13,10 @@
   <a href="https://github.com/MoizIbnYousaf/Ai-Agent-Skills"><img alt="GitHub stars" src="https://img.shields.io/github/stars/MoizIbnYousaf/Ai-Agent-Skills?style=for-the-badge&label=stars&labelColor=313244&color=89b4fa&logo=github&logoColor=cdd6f4" /></a>
   <a href="https://www.npmjs.com/package/ai-agent-skills"><img alt="npm version" src="https://img.shields.io/npm/v/ai-agent-skills?style=for-the-badge&label=version&labelColor=313244&color=b4befe&logo=npm&logoColor=cdd6f4" /></a>
   <a href="https://www.npmjs.com/package/ai-agent-skills"><img alt="npm total downloads" src="https://img.shields.io/npm/dt/ai-agent-skills?style=for-the-badge&label=downloads&labelColor=313244&color=f5e0dc&logo=npm&logoColor=cdd6f4" /></a>
-  <a href="https://github.com/MoizIbnYousaf/Ai-Agent-Skills#shelves"><img alt="Library structure" src="https://img.shields.io/badge/library-141%20skills%20%C2%B7%206%20shelves-cba6f7?style=for-the-badge&labelColor=313244&logo=bookstack&logoColor=cdd6f4" /></a>
+  <a href="https://github.com/MoizIbnYousaf/Ai-Agent-Skills#shelves"><img alt="Library structure" src="https://img.shields.io/badge/library-144%20skills%20%C2%B7%206%20shelves-cba6f7?style=for-the-badge&labelColor=313244&logo=bookstack&logoColor=cdd6f4" /></a>
 </p>
 
-<p align="center"><sub>18 house copies · 123 cataloged upstream</sub></p>
+<p align="center"><sub>21 house copies · 123 cataloged upstream</sub></p>
 <!-- GENERATED:library-stats:end -->
 
 <p align="center"><em>Picked, shelved, and maintained by hand.</em></p>
@@ -233,8 +233,8 @@ The shelves are the main structure.
 <!-- GENERATED:shelf-table:start -->
 | Shelf | Skills | What it covers |
 | --- | --- | --- |
-| Frontend | 10 | Interfaces, design systems, browser work, and product polish. |
-| Backend | 5 | Systems, data, security, and runtime operations. |
+| Frontend | 12 | Interfaces, design systems, browser work, and product polish. |
+| Backend | 6 | Systems, data, security, and runtime operations. |
 | Mobile | 24 | Swift, SwiftUI, iOS, and Apple-platform development, with room for future React Native branches. |
 | Workflow | 12 | Files, docs, planning, release work, and research-to-output flows. |
 | Agent Engineering | 14 | MCP, skill-building, prompting discipline, and LLM application work. |
@@ -319,6 +319,9 @@ Current upstream mix:
 | `AvdLee/Core-Data-Agent-Skill` | 1 |
 | `AvdLee/Swift-Concurrency-Agent-Skill` | 1 |
 | `AvdLee/Swift-Testing-Agent-Skill` | 1 |
+| `avivgerz-hue/ghost-qa` | 1 |
+| `avivgerz-hue/unslop` | 1 |
+| `avivgerz-hue/vibe-shield` | 1 |
 | `bocato/swift-testing-agent-skill` | 1 |
 | `conorluddy/ios-simulator-skill` | 1 |
 | `dadederk/iOS-Accessibility-Agent-Skill` | 1 |
