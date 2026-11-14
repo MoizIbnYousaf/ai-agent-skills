@@ -6,26 +6,26 @@ House copies stay flat under `skills/<name>/`. The catalog holds the real struct
 
 ## Frontend
 
-10 skills. Interfaces, design systems, browser work, and product polish.
+12 skills. Interfaces, design systems, browser work, and product polish.
 
 | Branch | Skills | Source |
 | --- | --- | --- |
 | Components | `shadcn` | shadcn-ui |
-| Design Engineering | `figma`, `emil-design-eng` | openai, emilkowalski |
+| Design Engineering | `figma`, `emil-design-eng`, `unslop` | openai, emilkowalski, avivgerz-hue |
 | Implementation | `frontend-design`, `figma-implement-design` | anthropics, openai |
-| Quality | `webapp-testing`, `playwright`, `userinterface-wiki` | anthropics, openai, raphaelsalaja |
+| Quality | `webapp-testing`, `playwright`, `userinterface-wiki`, `ghost-qa` | anthropics, openai, raphaelsalaja, avivgerz-hue |
 | Visual Systems | `canvas-design`, `brand-guidelines` | anthropics |
 
 ## Backend
 
-5 skills. Systems, data, security, and runtime operations.
+6 skills. Systems, data, security, and runtime operations.
 
 | Branch | Skills | Source |
 | --- | --- | --- |
 | Architecture | `backend-development` | wshobson |
 | Data | `database-design` | wshobson |
 | Operations | `gh-fix-ci`, `sentry` | openai |
-| Security | `security-best-practices` | openai |
+| Security | `security-best-practices`, `vibe-shield` | openai, avivgerz-hue |
 
 ## Mobile
 
