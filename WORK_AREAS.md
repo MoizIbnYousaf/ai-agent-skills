@@ -18,12 +18,12 @@ House copies stay flat under `skills/<name>/`. The catalog holds the real struct
 
 ## Backend
 
-5 skills. Systems, data, security, and runtime operations.
+6 skills. Systems, data, security, and runtime operations.
 
 | Branch | Skills | Source |
 | --- | --- | --- |
 | Architecture | `backend-development` | wshobson |
-| Data | `database-design` | wshobson |
+| Data | `database-design`, `datacircle` | wshobson, waynehamadi |
 | Operations | `gh-fix-ci`, `sentry` | openai |
 | Security | `security-best-practices` | openai |
 

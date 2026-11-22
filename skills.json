@@ -1,7 +1,7 @@
 {
   "version": "4.3.2",
   "updated": "2026-09-21",
-  "total": 141,
+  "total": 142,
   "workAreas": [
     {
       "id": "frontend",
@@ -4585,6 +4585,36 @@
       "notes": "",
       "labels": [],
       "path": "skills/verification-agent"
+    },
+    {
+      "name": "datacircle",
+      "description": "Every plan of every GTM API on datacircle.dev as one file you download and query: price per 1,000 results, our score, rate limits and fields. Use it to compare or price a GTM API.",
+      "category": "development",
+      "workArea": "backend",
+      "branch": "Data",
+      "author": "waynehamadi",
+      "source": "waynehamadi/datacircle",
+      "license": "MIT",
+      "tags": [
+        "gtm",
+        "api",
+        "pricing",
+        "lead-generation"
+      ],
+      "featured": false,
+      "verified": false,
+      "origin": "curated",
+      "trust": "listed",
+      "syncMode": "live",
+      "sourceUrl": "https://github.com/waynehamadi/datacircle/tree/main/skills/datacircle",
+      "whyHere": "Prices and compares GTM data APIs from the benchmark at https://datacircle.dev.",
+      "vendored": false,
+      "installSource": "waynehamadi/datacircle/skills/datacircle",
+      "tier": "upstream",
+      "distribution": "live",
+      "notes": "",
+      "labels": [],
+      "path": ""
     }
   ]
 }

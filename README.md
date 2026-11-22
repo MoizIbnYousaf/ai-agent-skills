@@ -13,10 +13,10 @@
   <a href="https://github.com/MoizIbnYousaf/Ai-Agent-Skills"><img alt="GitHub stars" src="https://img.shields.io/github/stars/MoizIbnYousaf/Ai-Agent-Skills?style=for-the-badge&label=stars&labelColor=313244&color=89b4fa&logo=github&logoColor=cdd6f4" /></a>
   <a href="https://www.npmjs.com/package/ai-agent-skills"><img alt="npm version" src="https://img.shields.io/npm/v/ai-agent-skills?style=for-the-badge&label=version&labelColor=313244&color=b4befe&logo=npm&logoColor=cdd6f4" /></a>
   <a href="https://www.npmjs.com/package/ai-agent-skills"><img alt="npm total downloads" src="https://img.shields.io/npm/dt/ai-agent-skills?style=for-the-badge&label=downloads&labelColor=313244&color=f5e0dc&logo=npm&logoColor=cdd6f4" /></a>
-  <a href="https://github.com/MoizIbnYousaf/Ai-Agent-Skills#shelves"><img alt="Library structure" src="https://img.shields.io/badge/library-141%20skills%20%C2%B7%206%20shelves-cba6f7?style=for-the-badge&labelColor=313244&logo=bookstack&logoColor=cdd6f4" /></a>
+  <a href="https://github.com/MoizIbnYousaf/Ai-Agent-Skills#shelves"><img alt="Library structure" src="https://img.shields.io/badge/library-142%20skills%20%C2%B7%206%20shelves-cba6f7?style=for-the-badge&labelColor=313244&logo=bookstack&logoColor=cdd6f4" /></a>
 </p>
 
-<p align="center"><sub>18 house copies · 123 cataloged upstream</sub></p>
+<p align="center"><sub>18 house copies · 124 cataloged upstream</sub></p>
 <!-- GENERATED:library-stats:end -->
 
 <p align="center"><em>Picked, shelved, and maintained by hand.</em></p>
@@ -234,7 +234,7 @@ The shelves are the main structure.
 | Shelf | Skills | What it covers |
 | --- | --- | --- |
 | Frontend | 10 | Interfaces, design systems, browser work, and product polish. |
-| Backend | 5 | Systems, data, security, and runtime operations. |
+| Backend | 6 | Systems, data, security, and runtime operations. |
 | Mobile | 24 | Swift, SwiftUI, iOS, and Apple-platform development, with room for future React Native branches. |
 | Workflow | 12 | Files, docs, planning, release work, and research-to-output flows. |
 | Agent Engineering | 14 | MCP, skill-building, prompting discipline, and LLM application work. |
@@ -335,6 +335,7 @@ Current upstream mix:
 | `twostraws/SwiftData-Agent-Skill` | 1 |
 | `twostraws/SwiftUI-Agent-Skill` | 1 |
 | `vanab/swiftdata-agent-skill` | 1 |
+| `waynehamadi/datacircle` | 1 |
 <!-- GENERATED:source-table:end -->
 
 The two biggest upstream publishers in this library are Anthropic and OpenAI.
